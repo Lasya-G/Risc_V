@@ -122,5 +122,6 @@ Load/Store Instructions and Completing RISC-V CPU
 </details> 
 
 
-### References
+### References  
+1. https://www.vsdiat.com/course_content?uniqueid=20220802023852  
 
