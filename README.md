@@ -39,6 +39,22 @@ Labwork for RISC-V software toolchain
 ```
 The implementation  and the output of the above code is shown here: <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6fb11753-d2c6-4df9-a581-2a1c2513ca7f">  
 
+2. Let us now compile the sum1ton.c file using risc-v simulator using following codes:
+```
+$ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+$ riscv64-unknown-elf-objdump -d sum1ton.o | less
+```
+The main content assembly code is as follows:  
+<img width="500" alt="Screenshot from 2023-08-19 15-23-02" src="https://github.com/Lasya-G/Risc_V/assets/140998582/fdcb9194-c4e9-4e45-bbee-97a37d24f615">  
+
+Let us run the same using a slightly different command and observe the output:
+```
+$ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+$ riscv64-unknown-elf-objdump -d sum1ton.o | less
+```
+<img  width="500"  alt="Screenshot from 2023-08-19 15-26-43" src="https://github.com/Lasya-G/Risc_V/assets/140998582/316c402d-67b1-4a34-a32a-d45e1b5f5149">  
+
+
 
 
   
