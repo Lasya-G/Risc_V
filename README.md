@@ -87,7 +87,7 @@ Integer number representation
 <img width="550" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/376bd36b-ab55-44d5-bcb5-56c41c6d3657">
 </p>
 
-- In signed representation of binary numbers, the range of positive numbers we can represent using n-bits is: **0 to (2^(n-1) - 1)** and the range of negative numbers is: **-1 to -2^(n)**.
+- In signed representation of binary numbers, the range of positive numbers we can represent using n-bits is: **0 to (2^(n-1) - 1)** and the range of negative numbers is: **-1 to -2^(n-1)**.
 
 2. Let us do a lab exercise based on the signed and unsigned binary numbers:
 
