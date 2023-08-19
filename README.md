@@ -196,8 +196,9 @@ Lab work using ABI function calls
 </summary>
 
 Let us use the same example of sum of 'n' numbers in c-language but using a different approach.The algorithm used to re-write the code is shown here:   
+<p align="center">
 <img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/899c27a7-f804-4f87-bcb8-99574a8432e6">  
-
+</p>
   
 Create a c file with name 1to9_custom.c and write the following code in it:
 ```
@@ -247,7 +248,9 @@ Basic verification flow using iverilog
 </summary>
 
 We will follow the following procedure in this lab session:  
+<p align="center">
 <img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/8e983904-1e1d-4dde-8280-1900454007ab">  
+</p>
 
 Use following commands to the riscv cpu program code:
 ```
@@ -264,9 +267,6 @@ The following are the hex files:
 - firmware32.hex:
 <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/fab6f05e-98ee-44d7-8525-f20a92f3f36f">  
 
-
-
-
 </details>
 
 
@@ -276,6 +276,34 @@ The following are the hex files:
 <summary>
 Combinational logic in TL-Verilog using Makerchip 
 </summary>
+
+The logic gates are the fundamental building blocks of digital circuits:
+<p align="center">
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/66563732-9bee-430f-b6e5-76b80fa58d25"> 
+</p>
+
+These fundamnetal blocks are connected together to form the most complex circuits.
+Consider the following full adder circuit:
+<p align="center">
+<img width="350" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/166fc608-5b6f-4c06-921f-d5c2d7525d84"> 
+</p>
+
+Let us now use this full adder as a basic block to build complex circuitslike an n-bit adder:
+<p align="center">
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/07216113-b9c2-4cc1-83b6-306e98f14fde">  
+</p>
+
+Some basic boolean operators are listed below:
+<p align="center">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6ff96384-838b-4fca-949f-ba16f6d56895">
+</p>
+
+
+
+
+
+
+
 </details>
 
 <details>
@@ -344,5 +372,6 @@ Load/Store Instructions and Completing RISC-V CPU
 
 
 ### References  
-1. https://www.vsdiat.com/course_content?uniqueid=20220802023852  
+1. https://www.vsdiat.com
+2. https://github.com/stevehoover/RISC-V_MYTH_Workshop
 
