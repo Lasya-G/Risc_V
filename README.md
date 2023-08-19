@@ -149,7 +149,6 @@ int main() {
 Now, we ge the desired results: <img width="550" alt="Screenshot from 2023-08-19 18-01-41" src="https://github.com/Lasya-G/Risc_V/assets/140998582/c70cabae-f55d-45a3-a49f-2382f7a4544e">  
 
 
-
 </details>
 
 ### Day-2 - Introduction to ABI and basic verification flow  
@@ -158,6 +157,32 @@ Now, we ge the desired results: <img width="550" alt="Screenshot from 2023-08-19
 <summary>
  Application Binary interface (ABI) 
 </summary>
+
+- For a computer, the Interface for the users means the appearance and functionality of the system. It does not bother about the implementation procedure and the processors used.
+- Inorder for an application to run on the hardware there are many intermediate stages that the program has to undergo. The below example depicts the stages involved for an e-mail application to run on a hardware:
+<p align="center">
+<img width="600" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/463092a4-9bfb-4101-926d-65693a32ba88">
+</p>  
+
+**Application Binary Interface**:
+- It is a mode through which the application programmer can access the contents of hardware resources of the processor. The access of porcessor is done via registers.
+- In RISC-V specification, we have 32 registers whose width is defined by the keyword "XLEN". It is XLEN-32 bit for Rv32 and XLEN-64 for Rv64.
+- For RV64, the data can either be loaded to registers directly or we can first load tha data into memory which holds 8-bits in each memory address and then transfer it to the registers.
+- All the instructions in RISC-V is of 32-bits.
+- **ld**(load doubleword) is a command to load the contents of memory into register. 
+- **add** is used to add the contents of the registers/memory. 
+- **sd**(store doubleword) is used to store the contents of register back to the memory.
+
+The summary of the above instructions is shown below:
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/e3325e6d-f928-48f0-83f3-061bdcfa4423">  
+</p>
+
+
+
+
+
+
 </details>
 
 <details>
