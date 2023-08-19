@@ -316,57 +316,44 @@ Now, let's begin with the **Makerchip**:
 - Go to makerchip.com and launch Makerchip IDE.
 - Go to Learn, click on Examples and select FPGA multipler.
 <p align="center">
-<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/23dbaa4a-8862-4742-8a17-ea900db30a18">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/23dbaa4a-8862-4742-8a17-ea900db30a18">
 </p>
 
 
 **LAB-1** - Makerchip Platform: 
 <p align="center">
-<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/e545e873-c529-4f5b-b51f-4294f4342ea0">  
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/e545e873-c529-4f5b-b51f-4294f4342ea0">  
 </p>
 
 **LAB-2** - Combinational Logic:   
 1. INVERTER:
 <p align="center">
-<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/7daabdf7-72ff-4946-9824-e9686348ead3">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/7daabdf7-72ff-4946-9824-e9686348ead3">
 </p>
 
 2. AND GATE:
 <p align="center">
-<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/9e97649e-4ba5-4372-929f-6189ac43fef2">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/9e97649e-4ba5-4372-929f-6189ac43fef2">
 </p>  
 
 **LAB-3** - Vectors:    
 <p align="center">
-<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6f9d5e55-a01c-4787-b061-c48759716055">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6f9d5e55-a01c-4787-b061-c48759716055">
 </p>  
 
 **LAB-4** - Mux:  
 <p align="center">
-<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/d528baab-8dbe-4f5b-bf3b-cb03f4981c73">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/d528baab-8dbe-4f5b-bf3b-cb03f4981c73">
 </p>  
 
 <p align="center">
-<img width="450" alt="Screenshot from 2023-08-19 23-34-42" src="https://github.com/Lasya-G/Risc_V/assets/140998582/5e99d722-c352-4e0e-9fa5-ab3bdf584f07">
+<img width="400" alt="Screenshot from 2023-08-19 23-34-42" src="https://github.com/Lasya-G/Risc_V/assets/140998582/5e99d722-c352-4e0e-9fa5-ab3bdf584f07">
 </p>  
 
 **LAB-5** - Coombinational calculator:
 <p align="center">
-<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/f5fff139-b79d-45d3-888d-1ba3aad1b629">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/f5fff139-b79d-45d3-888d-1ba3aad1b629">
 </p>  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </details>
 
@@ -374,6 +361,40 @@ Now, let's begin with the **Makerchip**:
 <summary>
 Sequential logic 
 </summary>
+
+- Sequential logic introduces a clock in the circuit. <img width = "500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/de6626ce-063c-47e4-a068-a4486bd316e1">
+
+A D-Flipflop is responsible for allowing the values to propagate upon the clock edge. <img width="300" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6e1f74bf-09ab-4a5d-accc-6f64780f5b97">  
+
+The reset signal is used to get all the flipflops into a known state.
+The whole sequential circuit can be viewed as a big state machine: <img width="300" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/58fcf2b7-a5a0-4a97-a85c-a338df4b9ebd">  
+Upon the clock the combinational circuit does a new computation with the updated state.
+
+**LAB** - Fibonacci Series:
+<p align="center"">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/34fec31f-d0fd-40a9-a9a6-225e488ecb4e">
+</p>
+
+**LAB** - Counter:
+<p align="center">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/43adef2f-a0a8-40e7-8818-ff28cc5b79f4">
+</p>
+
+The values in verilog are represented as:  
+<img width="300" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/d09876ff-1b25-45b4-b47c-5479cb474cae">  
+
+**LAB** - Sequential Calculator:  
+<p align="center">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/55e8dacd-184f-4755-8ab5-3b788d922705"> 
+</p>
+
+
+
+
+
+
+
+
 </details>
 
 <details>
