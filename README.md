@@ -3,7 +3,7 @@
 ### TABLE OF CONTENTS
 - [Day-1 - Introduction to RISC-V ISA and GNU compiler toolchain](#day-1---introduction-to-risc-v-isa-and-gnu-compiler-toolchain)
 - [Day-2 - Introduction to ABI and basic verification flow](#day-2---introduction-to-abi-and-basic-verification-flow)
-- [Day-3 - Digital Logic with TL-Verilog and Makerchip](#day-3---digital-logic-with-tv-verilog-and-makerchip)
+- [Day-3 - Digital Logic with TL-Verilog and Makerchip](#day-3---digital-logic-with-tl-verilog-and-makerchip)
 - [Day-4 - Basic RISC-V CPU micro-architecture](#day-4---basic-risc-v-cpu-micro-architecture)
 - [Day-5 - Complete Pipelined RISC-V CPU micro-architecture](#day-5---complete-pipelined-risc-v-cpu-micro-architecture)
 - [References](#references)
@@ -37,7 +37,7 @@ Labwork for RISC-V software toolchain
 	return 0;
 }
 ```
-The implementation  and the output of the above code is shown here: <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/74e7cf59-fbe2-4be7-92ae-5f837592adb2">  
+The implementation  and the output of the above code is shown here: <img width="520" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/74e7cf59-fbe2-4be7-92ae-5f837592adb2">  
 
 2. Let us now compile the sum1ton.c file using risc-v simulator using following codes:
 ```
@@ -71,6 +71,67 @@ Let us now debug the above:
 <summary>
 Integer number representation
 </summary>
+
+1. As computer can only understand binary number, we need to learn how to convert the decimal to binary and viceversa and understand it.
+
+- In RISC-V architecture, we call the 64-bit binary number as **"Double word"**, and a 32-bit number as a **"word"**.
+- A group of 8 bits is termed as **"Byte"**.
+<p align="center">
+<img width="550" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/de2a5767-b8f4-43e2-8c7f-2ef20c06a6ba">
+</p>
+
+- The total unsigned numbers we can form using n-bits is given as  : **2^(n) - 1**.
+- We use 2's complement representation to represent the negative numbers.
+- For signed representation, the MSB bit indicated the sign of the number. If MSB=0, it is a positive number and MSB=1 indicates a negative number.
+<p align="center">
+<img width="550" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/376bd36b-ab55-44d5-bcb5-56c41c6d3657">
+</p>
+
+- In signed representation of binary numbers, the range of positive numbers we can represent using n-bits is: **0 to (2^(n-1) - 1)** and the range of negative numbers is: **-1 to -2^(n)**.
+
+2. Let us do a lab exercise based on the signed and unsigned binary numbers:
+
+- The following code is to rpresent the highest binary number in unsigned representation:
+```
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+	unsigned long long int max = (unsigned long long int) (pow(2,64) -1);
+	printf("highest number represented by usigned long long int is %llu\n", max);
+	return 0;
+}
+```
+The output is as follows: <img width="600" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/3fd06edc-7995-44e5-8ad4-d77048ffabfc">  
+
+Now, if we modify the code to give the representationof a higher bit number, the output still remains the same because the data type unsigned long long int only supports 64-bits.
+Let us edit the data type as long long int and rerun the code:
+```
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+	long long int max = (long long int) (pow(2,10) * -1);
+	printf("highest number represented by long long int is %lld\n", max);
+	return 0;
+}
+```
+The output is as follows: <img width="550" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/f5f710c6-3561-44d2-a3a4-84501a53a98d">  
+
+Create a new file signedHighest.c with the following code in it:
+```
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+	long long int max = (int) (pow(2,63) -1);
+	long long int min = (int) (pow(2,63) * -1);
+	printf("highest number represented by long long int is %lld\n", max);
+	printf("lowest number represented by long long int is %lld\n", min);
+	return 0;
+}
+```
+The output now is: <img width="550" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/72b68511-f991-40df-9b48-c9d5978eabf7">  
 </details>
 
 ### Day-2 - Introduction to ABI and basic verification flow  
