@@ -24,6 +24,24 @@ Introduction to RISC-V basic keywords
 <summary>
 Labwork for RISC-V software toolchain  
 </summary>
+
+ 1. Let us start with a simple c-program with name 'sum1ton.c'. The code is as follows:
+ ```
+ #include <stdio.h>
+ int main() {
+	int i, sum = 0, n = 5;
+	for (i=1; i <= n; ++i) {
+	sum += i;
+	}
+	printf("Sum of numbers from 1 to %d is %d\n", n, sum);
+	return 0;
+}
+```
+The implementation  and the output of the above code is shown here: <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6fb11753-d2c6-4df9-a581-2a1c2513ca7f">  
+
+
+
+  
 </details>
 
 <details>
