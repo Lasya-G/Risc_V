@@ -132,6 +132,24 @@ int main() {
 }
 ```
 The output now is: <img width="550" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/72b68511-f991-40df-9b48-c9d5978eabf7">  
+
+Here, the outut getting displayed is wrong. Inorder to get the correct output, modify the code as following:
+```
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+	long long int max = (long long int) (pow(2,63) -1);
+	long long int min = (long long int) (pow(2,63) * -1);
+	printf("highest number represented by long long int is %lld\n", max);
+	printf("lowest number represented by long long int is %lld\n", min);
+	return 0;
+}
+```
+Now, we ge the desired results: <img width="550" alt="Screenshot from 2023-08-19 18-01-41" src="https://github.com/Lasya-G/Risc_V/assets/140998582/c70cabae-f55d-45a3-a49f-2382f7a4544e">  
+
+
+
 </details>
 
 ### Day-2 - Introduction to ABI and basic verification flow  
