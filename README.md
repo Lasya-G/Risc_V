@@ -298,6 +298,70 @@ Some basic boolean operators are listed below:
 <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6ff96384-838b-4fca-949f-ba16f6d56895">
 </p>
 
+Let us now take a look at the **MULTIPLEXER(MUX)** block and it's function:
+<p align="center">
+<img width="300" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/eecf29a3-c0a4-4144-8c84-7fe04eb22857">  
+
+We use the following syntax to express the mux in the verilog:
+```
+assign f = s ? x1 : x2;
+```
+
+Now, take a look at the Chaining Ternary Operator(4-bit mux):  
+<p align="center">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/bccff903-7dcc-40b3-92ec-f8b87f479505">   
+</p>
+
+Now, let's begin with the **Makerchip**:  
+- Go to makerchip.com and launch Makerchip IDE.
+- Go to Learn, click on Examples and select FPGA multipler.
+<p align="center">
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/23dbaa4a-8862-4742-8a17-ea900db30a18">
+</p>
+
+
+**LAB-1** - Makerchip Platform: 
+<p align="center">
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/e545e873-c529-4f5b-b51f-4294f4342ea0">  
+</p>
+
+**LAB-2** - Combinational Logic:   
+1. INVERTER:
+<p align="center">
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/7daabdf7-72ff-4946-9824-e9686348ead3">
+</p>
+
+2. AND GATE:
+<p align="center">
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/9e97649e-4ba5-4372-929f-6189ac43fef2">
+</p>  
+
+**LAB-3** - Vectors:    
+<p align="center">
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6f9d5e55-a01c-4787-b061-c48759716055">
+</p>  
+
+**LAB-4** - Mux:  
+<p align="center">
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/d528baab-8dbe-4f5b-bf3b-cb03f4981c73">
+</p>  
+
+<p align="center">
+<img width="450" alt="Screenshot from 2023-08-19 23-34-42" src="https://github.com/Lasya-G/Risc_V/assets/140998582/5e99d722-c352-4e0e-9fa5-ab3bdf584f07">
+</p>  
+
+**LAB-5** - Coombinational calculator:
+<p align="center">
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/f5fff139-b79d-45d3-888d-1ba3aad1b629">
+</p>  
+
+
+
+
+
+
+
+
 
 
 
