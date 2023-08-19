@@ -195,6 +195,49 @@ The summary of the above instructions is shown below:
 Lab work using ABI function calls
 </summary>
 
+Let us use the same example of sum of 'n' numbers in c-language but using a different approach.The algorithm used to re-write the code is shown here:   
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/899c27a7-f804-4f87-bcb8-99574a8432e6">  
+
+  
+Create a c file with name 1to9_custom.c and write the following code in it:
+```
+#include <stdio.h>
+
+extern int load(int x, int y);
+
+int main() {
+	int result=0;
+	int count = 0;
+	result = load(0x0, count+1);.global load
+	printf("Sum of number 1 to %d is %d\n", count,result);
+}
+```
+Create another file named load.s and dump the following code into it:
+```
+.section .text
+.global load
+.type load, @function
+
+load:
+	add	a4,a0,zero
+	add	a2,a0,a1
+	add	a3,a0,zero
+loop:
+	add	a4,a3,a4
+	addi	a3,a3,1
+	blt	a3,a2,loop
+	add	a0,a4,zero
+	ret
+```
+Let us run the above codes using spike compiler and observe:
+<img width="550" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/cb5e8ad4-7dd5-4f9f-a84a-b86ca9311663">  
+
+Use the following command to view the assembly code generated:
+```
+riscv64-unknown-elf-objdump -d sum1ton.o | less
+```
+
+The main program is as follows: <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/41c2e680-f090-4d22-a9ff-938941f09df5">  
 
 </details>
 
@@ -202,6 +245,28 @@ Lab work using ABI function calls
 <summary>
 Basic verification flow using iverilog 
 </summary>
+
+We will follow the following procedure in this lab session:  
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/8e983904-1e1d-4dde-8280-1900454007ab">  
+
+Use following commands to the riscv cpu program code:
+```
+vim 1to9_custom.c
+./rv32im.sh 
+```
+The following output is observed: <img width="550" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/7f676179-c142-4b00-8348-58e5841a770d">  
+
+The following are the hex files:  
+
+- firmaware.hex:
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/a32ba685-cd89-452f-8c02-f11fe04708e3">
+
+- firmware32.hex:
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/fab6f05e-98ee-44d7-8525-f20a92f3f36f">  
+
+
+
+
 </details>
 
 
