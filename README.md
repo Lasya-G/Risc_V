@@ -29,7 +29,7 @@ Labwork for RISC-V software toolchain
  ```
  #include <stdio.h>
  int main() {
-	int i, sum = 0, n = 5;
+	int i, sum = 0, n = 100;
 	for (i=1; i <= n; ++i) {
 	sum += i;
 	}
@@ -37,7 +37,7 @@ Labwork for RISC-V software toolchain
 	return 0;
 }
 ```
-The implementation  and the output of the above code is shown here: <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6fb11753-d2c6-4df9-a581-2a1c2513ca7f">  
+The implementation  and the output of the above code is shown here: <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/74e7cf59-fbe2-4be7-92ae-5f837592adb2">  
 
 2. Let us now compile the sum1ton.c file using risc-v simulator using following codes:
 ```
@@ -45,19 +45,26 @@ $ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 $ riscv64-unknown-elf-objdump -d sum1ton.o | less
 ```
 The main content assembly code is as follows:  
-<img width="500" alt="Screenshot from 2023-08-19 15-23-02" src="https://github.com/Lasya-G/Risc_V/assets/140998582/fdcb9194-c4e9-4e45-bbee-97a37d24f615">  
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/c7709eef-f164-40f3-84b2-d99b735199dd">  
 
 Let us run the same using a slightly different command and observe the output:
 ```
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 $ riscv64-unknown-elf-objdump -d sum1ton.o | less
 ```
-<img  width="500"  alt="Screenshot from 2023-08-19 15-26-43" src="https://github.com/Lasya-G/Risc_V/assets/140998582/316c402d-67b1-4a34-a32a-d45e1b5f5149">  
+<img  width="500"  alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6ebbf3f7-212f-4eaa-948d-16b6f22c37a3">  
+
+3. Now, let us learn how to get the output to display even when we run code using the RISC-V compiler:
+```
+spike pk sum1ton.o
+```
+
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/f1aa123e-76f0-4a33-a344-f8198a695828">    
 
 
-
-
-  
+Let us now debug the above:  
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/29383d37-177e-4893-a17d-2b9fc611fe97">  
+ 
 </details>
 
 <details>
