@@ -178,12 +178,17 @@ The summary of the above instructions is shown below:
 <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/e3325e6d-f928-48f0-83f3-061bdcfa4423">  
 </p>
 
+- The instructions which operate only on registers are called **R-type** instructions.
+- The instructions which operate on immediate as well as registers are called **I-type** instructions.
+- The instructions which operate only on source registers and immediate are called **S-type** instructions.
 
-
-
-
+- We will use 5-bits to represent the registers which is why we have only 32 registers in RISC-V. The registers fuctions are as follows:
+<p align="center">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/2a876d28-f15e-4fff-96bf-8bd20139dfa4">  
+</p>
 
 </details>
+
 
 <details>
 <summary>
