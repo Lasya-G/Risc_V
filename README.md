@@ -636,6 +636,84 @@ The implementation output:
 <summary>
 RISC-V control logic
 </summary>
+
+**LAB - REGISTER FILE READ_1**  
+
+The pipeline structure is as follows:  <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/eca9ac67-bee2-4567-9b4c-9f51d7947595">    
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/8835d312-fde2-47bb-93be-f6c6c9ffd928">  
+
+
+The makerchip implementation output:  
+<p align="center">
+<img width="500" alt="image" src="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/ab48af08-7d7b-4877-8aef-b9a06bf5c5db">
+</p>  
+
+**LAB - REGISTER FILE READ_2**  
+
+The pipeline structure: <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/8252ff3d-1b4a-48b1-a408-af2fe0de9a1d">  
+
+
+The makerchip implementation output:  
+<p align="center"> 
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/19837024-1468-414d-8ff6-0bcd1d60e59a">
+</p>
+
+**LAB - ALU**  
+
+The pipeline structure: <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/9e8e5f77-8ab5-4a76-8378-9b646307e80d">  
+
+The implementation output:  
+<p align="center"> 
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/083a9454-1832-4621-a734-24df5dbc2850">
+</p>
+
+
+
+**LAB - REGISTER FILE WRITE**  
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/a04e26da-f6ac-4830-af4e-e2086983597f">  
+
+The makerchip implementation output:  
+<p align="center"> 
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/57227a1a-9079-410a-a74e-f38098ae6931">
+</p>
+
+**ARRAYS**  
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/d99f90b2-c28f-4f96-b819-574403e3024c">  
+
+The detailed implementation of Register files is given below:  
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/5252e9c1-e29a-4e6b-8e52-c495c35d8627">  
+
+
+**LAB - BRANCHES**
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/4ce5b4ad-9c09-430e-bcf1-6b39dfea28dc">
+
+The implementation output:  
+<p align="center">
+<img width="500" alt="!mage" src="https://github.com/Lasya-G/Risc_V/assets/140998582/e874bb8b-ea31-4ca6-b185-9edf13a1bdf4">
+</p>
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/e9c60983-9303-463f-8085-6e87b30eab0e">  
+
+The output is as follows:  
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/7dab870a-cec7-43f3-84fb-b9c2e9221987">  
+
+**LAB - TESTBENCH**  
+
+The makerchip implementation output:  
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/e0013498-a534-4624-aeee-91e93cacd4d9">
+</p>
+
+
+         
+         
+
+
 </details>
 
 ### Day-5 - Complete Pipelined RISC-V CPU micro-architecture  
