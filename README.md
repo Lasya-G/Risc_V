@@ -774,7 +774,8 @@ The implementation output:
 <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6f4a4895-03ea-47fd-8a19-ae23269ec885">  
 </p>
 
-**LAB - ALU** 
+**LAB - ALU**   
+
 The makerchip implementation results are:
 <p align="center">
 <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/96477a58-80a0-43d8-9716-11be0385e3e9">  
@@ -786,7 +787,57 @@ The makerchip implementation results are:
 <details>
 <summary>
 Load/Store Instructions and Completing RISC-V CPU
-</summary>
+</summary> 
+
+**LOAD**  
+
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/0e33a0c9-5854-41af-819f-468a768fadd1">  
+ 
+The pipeline structure: <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/700c2548-85b4-48c1-b16a-2324f20f615c">  
+
+The implementation output:
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/a5bbd00d-df08-4294-bcfe-3f1157b88b0a">
+</p>
+
+**LOAD/STORE**  
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/1eded761-772a-46e3-9a80-584da3f4afb5">
+
+The implementation output:  
+
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/4106c86c-15c4-4543-8a40-67fa9e28d4bf">
+</p>
+
+**JUMPS**
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/61ab2fae-cb27-44dc-a89a-82f242d88c6a">   
+
+
+The makerchip output:  
+
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/8be22a61-dbad-4f2d-8521-03a787b7266f">
+</p>
+
+**RISC-V CORE CPU - FINAL IMPLEMENTATION**  
+
+<p align="center">
+<img width="600" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/431a593f-7b90-4825-89dc-bf85374f9090">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
 </details> 
 
 
