@@ -723,12 +723,26 @@ Pipelining the CPU
 
 <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/bef861e4-e993-42d9-9c0e-d05f45bdc4fb">  
 
-**LAB - 3-CYCLE VALID SIGNAL**  
+**LAB - 3-CYCLE VALID SIGNAL**    
 
-<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/e4e94871-c6a1-4178-89ff-73665a85ebbf">  
+The implementation output is:  
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/4e094372-0f25-4c77-b7c1-906d3b04ee5f">   
+</p>  
+
+
+**LAB - CYCLE RISC-V**  
+
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/4b65e2d2-8dba-4484-8bf7-a43a7f120a71">  
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/89cd76b4-80b1-4901-bc56-f460c01beec9">  
 
 
 
+The implementation output is:  
+
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/5eb309b3-0acb-47da-aa94-0e03d24f3205">
+</p>  
 
 
 </details>
@@ -737,6 +751,29 @@ Pipelining the CPU
 <summary>
 Solutions to Pipeline Hazards 
 </summary>
+
+**REGISTER FILE BYPASS**
+
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/50d9c9b0-05bc-4a5a-976e-c253deddaa59">  
+
+The pipeline structure:<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/5cd0ee1c-691a-4eef-be9f-a9c79873f96d">  
+
+The implementation output is as shown below:  
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/d15c47be-6335-4db8-9689-429d927a1ca5">  
+</p>
+
+**LAB - BRANCHES** 
+
+The pipeline structure:  
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/5840bbcc-26e1-4132-9cfa-2a28dcccdfa4">
+
+The implementation output:
+
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6f4a4895-03ea-47fd-8a19-ae23269ec885">  
+</p>
+
 </details>
 
 <details>
