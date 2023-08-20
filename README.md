@@ -533,10 +533,6 @@ The makerchip output:
 <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/c61529cd-6c60-485b-90e5-2c3d6a52c955">
 </p>
 
-
-
-
-
 </details>
 
 ### Day-4 - Basic RISC-V CPU micro-architecture
@@ -545,12 +541,95 @@ The makerchip output:
 <summary>
 Introduction to Simple RISC-V Micro-architecture 
 </summary>
+
+The micro architecture for the RISC-V implementation is shown here:  
+<img width="400" align="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/a6b48328-562a-4bf4-b061-1ee750ea6a8f">  
+- The **Program counter** is a pointer to the instruction memory as to which instrcution must be executed next.
+- The **Decoder** interprets the instruction and send signals regarding the action of the processor and the location of data. The decoder also sends incremented by 1 value to the PC, instructing it to move to the next instruction.
+- **Register Files** implements the read and write operations on the data/memory.
+- **ALU** computes the arithmetic operations and write the result back to the register file.
+
 </details>
 
 <details>
 <summary>
 Fetch and decode 
 </summary>
+
+The implementation plan of RISC-V CPU Core:  
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/0349e97f-0823-4c77-9be4-8f0fb13feb43">  
+
+**LAB - PC**:  
+
+The implementation pipeline: <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/a0ed2e11-7d97-4f2e-b9c7-844c511f77c5">  
+
+The makerchip output:
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/fcdb6430-244e-4298-a07e-4b07948efd91">
+</p>
+
+**LAB - FETCH**
+
+The pipeline structure(part-1): <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/a48ff16d-e3d3-4745-8e35-a09002283026"> 
+
+The pipeline structure(part-2): <img width="250" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/75dfe66b-b3c7-40ad-96ba-f4f17e88ed08">    
+
+
+The makerchip implementation output:  
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6bd09d0a-5372-4c5f-a7f1-04a40dfa3764">
+</p>
+
+**LAB - INSTRUCTION TYPE DECODE**  
+
+
+The pipeline structure: <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/5b1eec5d-61a0-43fe-992a-c42b2e2f96bf"> 
+
+
+The makerchip output:  
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/32e623de-acfc-45e5-9459-b41323abec30">
+</p>
+
+
+**LAB - INSTRUCTION IMMEDIATE DECODE**
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/5be86415-fb71-435f-ad36-c1d215643384">  
+
+The implementation output:
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/3f0c95e6-6fa2-47a7-a580-3a0c3fee30aa">
+</p>  
+
+
+**LAB - INSTRUCTION DECODE**  
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/50dd4c65-c605-43ab-b420-6a10d0d917e8">
+
+The implementation output:  
+<p align="center">
+<img wudth="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/c65173a1-6f61-42bf-a0df-eef102cecd0a">
+</p>
+
+**LAB - INSTRUCTION FIELD DECODE**  
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/fc794260-873d-4817-a5fc-986d1979472b">
+
+The implementation output:  
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/2cac17be-93d1-4f17-b305-49da3a5ce7b9">
+</p>
+
+**LAB - INSTRUCTION DECODE_2**  
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/7d1c0881-270a-4664-9496-0f8b7cd3d7b0">  
+
+
+The implementation output:
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/78350b64-dcc6-4c74-808d-e304876fa056">
+</p>
+
 </details>
 
 <details>
@@ -583,4 +662,5 @@ Load/Store Instructions and Completing RISC-V CPU
 ### References  
 1. https://www.vsdiat.com
 2. https://github.com/stevehoover/RISC-V_MYTH_Workshop
+3. http://makerchip.com/sandbox/
 
