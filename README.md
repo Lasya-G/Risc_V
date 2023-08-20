@@ -471,22 +471,72 @@ Validity
 
 Let us implement the Pythagoran's theorem with validity:
 <p align="center">
-<img widtj="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/10857531-6bc5-401e-88a9-6bea107e42a4">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/10857531-6bc5-401e-88a9-6bea107e42a4">
 </p>  
 
 
-- **Clock Gating** is a power-saving property.
-
-<img with="200" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/4656e7b6-a6f9-46f0-8c2b-fd13622e0bd3">  
-
+**Clock Gating** is a power-saving property.  
+<img width="450" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/4656e7b6-a6f9-46f0-8c2b-fd13622e0bd3">    
 
 
+**LAB** - Distance Accumulator with Pythagoran's theorem:  
+The pipelines structure is : <img width="350" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/bdf54ca4-13e0-440d-96da-d5ad891af409">  
+
+The implementation output:  
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/06976bd7-4b24-4fe2-a195-5e55387db38c">
+</p>  
+
+
+**LAB** - Cycle calculator with Validity:    
+
+The pipeline structure: <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/66da50d5-3b5b-41bd-85c4-c8b5692870fb)">  
+
+The makerchip implementation output:  
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/5116f2f9-7164-4de4-830d-fd029e8843bf">
+</p>  
+
+**LAB** - Calculator with single value memory:  
+
+The pipeline structure: <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/8c4c9737-f7dc-4c54-ace7-38cd7d54b284">  
+
+The makerchip implementation:  
+
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/5097273f-0293-4b3a-a860-7feaef125315">
+</p>
+
+
+ 
 </details>
 
 <details>
 <summary>
 Wrap-up 
 </summary>
+
+**Hierarchy**    
+
+**LAB** - conway's game of life:  
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/a920aa43-4c38-4d16-a23d-56c03d88fef2">
+</p>   
+
+**LAB** - Pythagoran's theorem:  
+
+The pipeline structure: <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/586fe3a1-c522-4896-9982-4ca4aa799346">  
+
+The makerchip output:  
+
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/c61529cd-6c60-485b-90e5-2c3d6a52c955">
+</p>
+
+
+
+
+
 </details>
 
 ### Day-4 - Basic RISC-V CPU micro-architecture
