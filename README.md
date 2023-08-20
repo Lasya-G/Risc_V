@@ -774,6 +774,13 @@ The implementation output:
 <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/6f4a4895-03ea-47fd-8a19-ae23269ec885">  
 </p>
 
+**LAB - ALU** 
+The makerchip implementation results are:
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/96477a58-80a0-43d8-9716-11be0385e3e9">  
+</p>
+
+
 </details>
 
 <details>
