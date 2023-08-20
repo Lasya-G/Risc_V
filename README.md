@@ -467,7 +467,7 @@ Validity
 </summary>  
 
 **Validity** is a notion for when the values or the signals are meaningful.  
-<img width="300" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/54a44194-cae1-4214-947c-f4a5988b3a0b">  
+<img width="250" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/54a44194-cae1-4214-947c-f4a5988b3a0b">  
 
 Let us implement the Pythagoran's theorem with validity:
 <p align="center">
@@ -477,7 +477,7 @@ Let us implement the Pythagoran's theorem with validity:
 
 - **Clock Gating** is a power-saving property.
 
-<img with="250" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/4656e7b6-a6f9-46f0-8c2b-fd13622e0bd3">  
+<img with="200" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/4656e7b6-a6f9-46f0-8c2b-fd13622e0bd3">  
 
 
 
