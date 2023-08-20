@@ -459,19 +459,28 @@ The makerchip implementation output:
 </p>  
 
 
-  
-
-
-
-
-
-
 </details>
 
 <details>
 <summary>
 Validity 
-</summary>
+</summary>  
+
+**Validity** is a notion for when the values or the signals are meaningful.  
+<img width="300" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/54a44194-cae1-4214-947c-f4a5988b3a0b">  
+
+Let us implement the Pythagoran's theorem with validity:
+<p align="center">
+<img widtj="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/10857531-6bc5-401e-88a9-6bea107e42a4">
+</p>  
+
+
+- **Clock Gating** is a power-saving property.
+
+<img with="250" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/4656e7b6-a6f9-46f0-8c2b-fd13622e0bd3">  
+
+
+
 </details>
 
 <details>
