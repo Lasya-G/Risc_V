@@ -388,19 +388,84 @@ The values in verilog are represented as:
 <img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/55e8dacd-184f-4755-8ab5-3b788d922705"> 
 </p>
 
-
-
-
-
-
-
-
 </details>
 
 <details>
 <summary>
 Pipelined logic 
 </summary>
+
+Let us glimpse at the Pythagoran's Theorem and compute it in hardware.  
+Pythagoran's Theorem: <img width="350" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/1b824835-a616-40ce-90d8-b1dbced71b20">  
+Let us compute the pythagoran's theorem over 3 cycles.  
+- Cycle1: Squaring on the sides a and b.
+- Cycle2: Adding the sqyared vales of a and b.
+- Cycle3: Finding the square root value of the sum.
+<p align="center">
+<img width="350" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/13066f2e-9192-491f-86e7-ac58eca11241">
+</p>  
+The timing abstract of the above is:   
+<img width="350" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/7af761d8-9158-436d-a189-dbda56eabf76">  
+
+The makerchip implementation of  Pythagoran's theorem is given below:  
+<p align="center">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/eb075aed-7678-431e-a4db-e413257692f5">
+</p>
+
+- **Code reduction** is the most advanatageous property of the TL-Verilog when compared to System Verilog. We can use the above code to compare this:
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/b2428652-e85f-4974-9237-1b32a41741d0">
+
+- The **Retiming** property in TL-Verilog is very easy and safe to implement whereas in SystemVerilog, it is very bug-prone.
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/9ded0b8f-8148-4637-a571-023f02398994">
+
+- The pipelinig also allows us to run the clock at a high frequency. Regardless of the way we structure our logic, we will be able to produce new set of inputs on every clock edge. As a result, we get high throughput for our circuit.  
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/ea35bbfa-e00c-45e2-bc64-931dac742ad6">
+
+**Syntax** in TL-Verilog:
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/b7cb7914-293e-40b3-9557-6ba14afac885">  
+
+Let us now implement the Fibonacci Series in a pipeline:
+<p align="center">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/87f04dc1-bd24-48b5-a08c-230709f4bb95">  
+</p>
+
+Implementation of pipeline through TL-Verilog:  
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/0cb545e1-6049-442e-aa73-0d91a2bd6b79">    
+
+In the above implenation, we can observe the errors in the pipeline:
+<img width="350" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/c086e074-7b95-45cf-8ba7-19742fee1696">  
+
+**LAB1** - Counter and Calculator in pipeline:  
+
+The strcture of the pipeline is as follows:  
+
+<img width="350" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/d98cfdde-b748-4a01-9b4a-44a28655dc53">  
+
+The makerchip implementation output:  
+
+<p align="center">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/c3d15a76-2dfa-46d4-8c04-5acda191ed96">
+</p>
+
+**LAB-2** - Cycle Calculator:  
+The structure of the pipeline: <img width="350" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/1f6e570f-9695-48f8-be21-3ba0d31b5bd9">   
+
+
+
+The makerchip implementation output:   
+<p align="center">
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/67da9907-1ed6-40d2-99b1-d3ab20c9cf41">
+</p>  
+
+
+  
+
+
+
+
+
+
 </details>
 
 <details>
