@@ -709,11 +709,7 @@ The makerchip implementation output:
 <img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/e0013498-a534-4624-aeee-91e93cacd4d9">
 </p>
 
-
-         
-         
-
-
+   
 </details>
 
 ### Day-5 - Complete Pipelined RISC-V CPU micro-architecture  
@@ -722,6 +718,19 @@ The makerchip implementation output:
 <summary>
 Pipelining the CPU 
 </summary>
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/1c23c767-e291-430f-ab0b-b85e6924f015">  
+
+<img width="400" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/bef861e4-e993-42d9-9c0e-d05f45bdc4fb">  
+
+**LAB - 3-CYCLE VALID SIGNAL**  
+
+<img width="500" alt="image" src="https://github.com/Lasya-G/Risc_V/assets/140998582/e4e94871-c6a1-4178-89ff-73665a85ebbf">  
+
+
+
+
+
 </details>
 
 <details>
