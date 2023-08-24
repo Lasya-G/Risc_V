@@ -836,12 +836,8 @@ The RISC-V final code is shown below:
    m4_makerchip_module   // (Expanded in Nav-TLV pane.)
 \TLV
 
-   // /====================\
-   // | Sum 1 to 9 Program |
-   // \====================/
    //
    // Program for MYTH Workshop to test RV32I
-   // Add 1,2,3,...,9 (in that order).
    //
    // Regs:
    //  r10 (a0): In: 0, Out: final sum
